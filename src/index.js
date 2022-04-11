@@ -6,8 +6,10 @@ import reducer from "./store/reducers";
 import App from "./routes/App";
 
 const preloadedState = {
-  user: {},
-  playing: {},
+  auth: {
+    user: {},
+  },
+  player: { playingVideo: null },
   myList: { data: [] },
   trends: {
     data: [

@@ -10,9 +10,9 @@ export const myListSlice = createSlice({
       state.data.push(payload);
     },
 
-    //deleteVideo: (state, { payload: { title: deletedTitle } }) => {
-    //  state.data = state.data.filter(({ title }) => deletedTitle !== title);
-    //},
+    deleteVideo: (state, { payload: { title: deletedTitle } }) => {
+      state.data = state.data.filter(({ title }) => deletedTitle !== title);
+    },
   },
 });
 
